@@ -7,9 +7,16 @@
         <title>User Page</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href=""> -->
+        <link rel="stylesheet" href="/styles/login.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- <style>
+            
+                background-color:#5126fb; 
+                height:600px;
+                border:2px solid white;
+        
+        </style>  -->
     </head>
     <body>
         <div class="container">
@@ -29,20 +36,20 @@
                 </div>
             </nav>
 
-            <div class="container-fluid" style="border: 2px solid black;">
-                <div class="d-flex flex-row" style="border: 2px solid green; width:100%">
-                    <div class="d-flex flex-column" style="border: 2px solid red; width:40%; height:500px">
-                        <div class="d-flex flex-column" style="border: 1px solid black; border-radius:10px; height:70%; display:flex; flex-direction:row; justify-content:center;">
+            <div class="container-fluid" style="background-color:lightcoral;">
+                <div class="d-flex flex-row" style="width:100%">
+                    <div class="d-flex flex-column" style="margin:20px; margin-right:10px; width:40%; height:600px">
+                        <div class="d-flex flex-column" style="margin-top:10px; background-color:white; border-radius:10px; height:70%; display:flex; flex-direction:row; justify-content:center;">
                             <div class="row1" style="display:flex; justify-content:center; ">
                                 <img src="/images/login.jpg" alt="login" width="200px" height="200px" /></div>
                             <div class="row2" style="text-align:center;">User Name</div>
                             <div class="row3" style="text-align:center;">Placeholder</div>
                             <div class="d-flex flex-row" style="justify-content:center; margin:10px;">
-                                <button style>Follow</button>
-                                <button>Message</button>
+                                <button class="bt">Follow</button>
+                                <button class="bt" style="background-color:white; color:black">Message</button>
                             </div>
                         </div>
-                        <div class="d-flex flex-row" style="border: 2px solid pink; height:30%">
+                        <div class="d-flex flex-row" style="margin-top:10px; background-color:white; border-radius:10px; height:30%">
                             <ul>
                                 <li>1</li>
                                 <li>2</li>
@@ -50,58 +57,46 @@
                         </div>
                     </div>
 
-                    <div class="d-flex flex-column" style="border: 2px solid blue; width:60%">
-                        Table
+                    <div class="d-flex flex-column" style="margin:20px; margin-left:10px; width:60%">
+                        <div class="container-fluid" style="margin-top:10px; background-color:white; border-radius:10px; height:50%;">
+                            <table class="table table-striped">
+                                <tbody>
+                                    <tr>
+                                        <td>Name</td>
+                                        <td><input type="text" name="name" id="name" placeholder="Enter your name" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td><input type="text" name="e-mail" id="e-mail" placeholder="Enter your email" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Phone</td>
+                                        <td><input type="tel" name="phone" id="phone" placeholder="Enter your phone number" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Address</td>
+                                        <td><input type="text" name="address" id="address" placeholder="Enter your address" /></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-flex flex-row" style="height:50%;">
+                            <div class="myFavoriteMovie" style="width:50%; margin-top:10px; margin-right:10px; background-color:white; border-radius:10px;">
+                                <ul>My Favorite Movie Lists
+                                    <li>1</li>
+                                    <li>1</li>
+                                </ul>
+                            </div> 
+                            <div class="interestingMovie" style="width:50%; margin-top:10px; margin-left:10px; background-color:white; border-radius:10px;">
+                                <ul>Interesting Movie Lists
+                                    <li>1</li>
+                                    <li>1</li>
+                                </ul>
+                            </div>
+                        </div> 
                     </div>
                 </div>
-            </div>
-            
+            </div>  
         </div>
-    <!-- <body style="margin-left: 50px; width: 60%; height: 80%;" > 
-        <ul style="list-style-type: none; margin-top: 10px; margin-left: 100px; padding-top: 50px; overflow: hidden; ">
-            <li style="float:left; font-weight: bold; font-size: 20px;">User Profile</li>
-            <li style="float:right; margin-right:150px; "><a class="nav-link" href="/pages/index.html">Home</li>      
-        </ul><hr>
-
-        <div class="container-fluid" style="margin: auto; width: 800px; height: 500px; display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;">
-            <div class="container-fluid" style="border-radius: 5%; width: 200px; height: 370px; display: inline-block; border: 1px solid gray; ">
-                <img src="/images/login-user.jpg" alt="your picture" style="margin-left: 35px; margin-top: 30px; width: 100px; height: 100px;"><br>
-                <p style="font-size: 20px; margin-left: 55px; ">NAME</p><br>
-                        class="center-block"  
-                <button type="button" class="btn btn-primary" style="margin-left: 10px; margin-top: 70px;">SAVE</button>
-                <button type="button" class="btn btn-primary" style="margin-top: 70px;">CANCEL</button>
-            </div>
-            <div class="container-fluid" style="border-radius: 5%; width: 500px; height: 370px; display: inline-block; border: 1px solid gray; ">
-                <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th></th><br>
-                    </tr>
-                </thead> 
-                <tbody>
-                    <tr>
-                        <td>Name</td>
-                        <td><input type="text" name="name" id="name" placeholder="Enter your name" /></td>
-                    </tr>
-                    <tr>
-                        <td>Email</td>
-                        <td><input type="text" name="email" id="email" placeholder="Enter your email" /></td>
-                    </tr>
-                    <tr>
-                        <td>Phone</td>
-                        <td><input type="tel" name="phone" id="phone" placeholder="Enter your phone number" /></td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td><input type="text" name="address" id="address" placeholder="Enter your address" /></td>
-                    </tr>
-                </tbody>
-                </table>
-            </div>
-            <div class="container-fluid" style="border-radius: 5%; width: 200px; height: 100px; display: inline-block; border: 1px solid gray; ">Recommended Movies</div>
-            <div class="container-fluid" style="border-radius: 5%; width: 200px; height: 100px; display: inline-block; border: 1px solid gray; ">Bookmarks Movies</div>
-            <div class="container-fluid" style="border-radius: 5%; width: 200px; height: 100px; display: inline-block; border: 1px solid gray; ">Interesting Movies</div>
-        </div>  --> 
     </body> 
 </html>
