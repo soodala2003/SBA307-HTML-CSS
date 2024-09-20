@@ -1,12 +1,11 @@
 .login-page {
     width: 400px;
-    height: 500px;
-    margin-top: 50px;
-    margin-left: 50px;
+    height: 580px;
+    margin: 30px 20px;
     border: 2px solid gray;
     box-shadow: 5px 10px 10px gray; 
     background-color: white;
-    border-radius: 5%;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-content: space-evenly;
@@ -50,7 +49,7 @@
 }
 
 .item3 {
-    border-radius: 25px;
+    border-radius: 10px;
     background-color: rgb(16, 219, 242);
     text-align: center;
     color: white;
@@ -69,17 +68,3 @@
     text-decoration: none; 
 }
 
-.bt {
-    border-radius: 25px;
-    background-color: rgb(16, 219, 242);
-    text-align: center;
-    color: white;
-    align-content: center;
-    width: 150px;
-    height: 40px;
-    margin: 20px;
-}
-
-li {
-    list-style-type: none;
-}
