@@ -14,3 +14,37 @@
     justify-content: center; 
     align-items: center;
 }
+
+.box1 {
+    font-weight: bolder;
+    font-size: 25px; 
+    height: 30%;
+    justify-content: center; 
+    transition-property: font-size;
+    transition-duration: 2s;
+    text-align: center;
+    /* Center text horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    display: flex; 
+}
+
+.box1:hover {
+    font-size: 50px;
+    background-color: yellow;
+    border-radius: 25px;
+}
+
+.box2 {
+    margin:40px 20px; 
+    height:40%;
+    border-color: #4284F4;
+    transition-property: color border-color;
+    transition-duration: 1s;
+    border: 5px solid black;
+}
+
+.box2:hover {
+    border-color: #FFAB40;;
+    transform: rotate(360deg);
+}
