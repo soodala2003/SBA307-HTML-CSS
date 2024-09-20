@@ -49,6 +49,11 @@
     transform: rotate(360deg);
 }
 
-div > h2 {
+div > p {
     margin: 15px;
+}
+
+p::first-line {
+    color: red;
+    font-variant:small-caps;
 }
